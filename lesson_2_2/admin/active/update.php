@@ -6,7 +6,7 @@ require __DIR__ . '/../../autoload.php';
 if(isset($_GET['id'])) {
     $id = (int)$_GET['id'];
 } else {
-    header('Location: /lesson_2/home_work/index.php');
+    header('Location: /lesson_2/home_work/admin/index.php');
     die;
 }
 
@@ -19,6 +19,7 @@ if(isset($_POST['update'])) {
     $article->content = $content;
     // исправила
     $article->save();
-    header('Location: /lesson_2/home_work/index.php');
+    header('Location: /lesson_2/home_work/admin/index.php');
+    die;
 }
 

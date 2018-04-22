@@ -9,11 +9,11 @@
 </head>
 <body>
 <h3>Обновить новость</h3>
-<form method="post" action="/lesson_2/home_work/admin/active/update.php?id=<?php echo $article->id; ?>">
-    <input type="text" name="title" value="<?php echo $article->title; ?>"><br>
-    <textarea name="content" style="resize: none;"><?php echo $article->content; ?></textarea><br>
-    <button type="submit" name="update">Обновить новость</button><br>
-    <a href="/lesson_2/home_work/admin/index.php">Назад в админ-панель</a>
+<form method="post" action="/lesson_2/home_work/admin/active/update.php?id=<?php echo $this->data['Article']->id; ?>">
+    <input type="text" name="title" value="<?php echo $this->data['Article']->title; ?>"><br>
+    <textarea name="content" style="resize: none;"><?php echo $this->data['Article']->content; ?></textarea><br>
+    <button type="submit" name="update">Обновить новость</button>
+    <a href="/lesson_2/home_work/admin/index.php">назад</a>
 </form>
 </body>
 </html>
